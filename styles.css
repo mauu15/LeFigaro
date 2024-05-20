@@ -1142,7 +1142,7 @@
   /* Opacità al passaggio del mouse */
 }
 @media screen and (max-width: 1024px) {
-  .dropdown-menu {
+  .dropdown-menu2 {
     display: none;
   }
   .dropdown-toggle {
@@ -1175,7 +1175,7 @@ a:hover {
   }
 }
 
-.dropdown-menu.visible {
+.dropdown-menu2.visible {
   display: block;
 }
 
@@ -1184,7 +1184,7 @@ a:hover {
 }
 
 
-.dropdown-menu {
+.dropdown-menu2 {
   position: relative;
   display: none;
   width: 100%;
@@ -1198,13 +1198,13 @@ a:hover {
   margin: 0;
   }
 
-.dropdown-menu ul {
+.dropdown-menu2 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   }
 
-.dropdown-menu a {
+.dropdown-menu2 a {
     color: rgb(22, 56, 96);
     font-weight: bold;
     text-decoration: none;
@@ -1215,7 +1215,7 @@ a:hover {
     padding-left: 20px;
   }
 
-.dropdown-menu a:before {
+.dropdown-menu2 a:before {
     content: '';
     position: absolute;
     left: 0;
@@ -1226,7 +1226,7 @@ a:hover {
     background-color: blue;
   }
 
-.dropdown-menu a:hover {
+.dropdown-menu2 a:hover {
     color: #0085c5;
   }
 
