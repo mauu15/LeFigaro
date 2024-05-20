@@ -1175,6 +1175,15 @@ a:hover {
   }
 }
 
+.dropdown-menu.visible {
+  display: block;
+}
+
+.overlay-dropdown-menu {
+  display: none;
+}
+
+
 .dropdown-menu {
   position: relative;
   display: none;
