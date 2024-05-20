@@ -1194,7 +1194,7 @@ a:hover {
   z-index: 6000;
   white-space: nowrap;
   overflow-x: auto;
-  top: 100px;
+  top: 0;
   }
 
 .dropdown-menu ul {
