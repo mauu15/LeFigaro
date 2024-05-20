@@ -200,51 +200,7 @@
   position: relative;
   display: inline-block;
 }
-.dropdown-menu {
-  display: none;
-  width: 100%;
-  background-color: #f9f9f9;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: 4000;
-  white-space: nowrap;
-  /* Impedisce il wrap degli elementi */
-  overflow-x: auto;
-  /* Aggiunge lo scroll orizzontale se necessario */
-}
-.dropdown-menu ul {
-  list-style-type: none;
-  padding: 20px;
-  margin: 0;
-}
-.dropdown-menu a {
-  color: #163860;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  /* Dispone gli elementi orizzontalmente */
-  font-size: 18px;
-  /* Aumenta la dimensione del testo */
-  margin-right: 15%;
-  /* Aggiunge spazio tra gli elementi */
-  position: relative;
-  /* Per posizionare la lineetta blu */
-  padding-left: 20px;
-  /* Spazio per la lineetta blu */
-}
-.dropdown-menu a:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 2px;
-  background-color: blue;
-}
-.dropdown-menu a:hover {
-  color: #0085c5;
-}
+
 .overlay-dropdown-menu {
   position: fixed;
   top: 200px;
@@ -1219,9 +1175,9 @@ a:hover {
   }
 }
 
-   .dropdown-menu {
-     position: relative;
-     display: none;
+.dropdown-menu {
+    position: relative;
+    display: none;
     width: 100%;
     background-color: #f9f9f9;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -1231,13 +1187,13 @@ a:hover {
     overflow-x: auto;
   }
 
-  .dropdown-menu ul {
+.dropdown-menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
 
-  .dropdown-menu a {
+.dropdown-menu a {
     color: rgb(22, 56, 96);
     font-weight: bold;
     text-decoration: none;
@@ -1248,7 +1204,7 @@ a:hover {
     padding-left: 20px;
   }
 
-  .dropdown-menu a:before {
+.dropdown-menu a:before {
     content: '';
     position: absolute;
     left: 0;
@@ -1259,10 +1215,10 @@ a:hover {
     background-color: blue;
   }
 
-  .dropdown-menu a:hover {
+.dropdown-menu a:hover {
     color: #0085c5;
   }
 
-  .overlay-dropdown-menu {
+.overlay-dropdown-menu {
     display: none; /* Nascondi l'overlay su schermi piccoli */
   }
