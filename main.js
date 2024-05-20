@@ -25,7 +25,7 @@ window.addEventListener("scroll", function() {
 
 document.addEventListener('DOMContentLoaded', function() {
   const dropdownToggle = document.querySelector('.dropdown-toggle');
-  const dropdownMenu = document.querySelector('.dropdown-menu');
+  const dropdownMenu = document.querySelector('.dropdown-menu2');
   const overlay = document.querySelector('.overlay-dropdown-menu');
 
   let isMenuOpen = false;
