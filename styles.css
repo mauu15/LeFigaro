@@ -1185,7 +1185,7 @@ a:hover {
 
 
 .dropdown-menu {
-  position: relative;
+  position: auto;
   display: none;
   width: 100%;
   background-color: #f9f9f9;
