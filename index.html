@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" href=
+            "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!---Source Sans 3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!--- Noto Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Le Figaro - Attualità e informazioni in continuo</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+        @media (max-width: 1024px) {
+            .header, 
+            .navbar {
+                display: none;
+            }
+        }
+    </style>
+    
+    <script src="main.js" type="module" defer></script>
+
+</head>
+
+
+<body>
+	
+    <div class="overlay-dropdown-menu" style="display: none;"></div>
+
+<header class="header">
+    <div class="search-box">
+        <p>&#128269; Ricerca </p>
+    </div>
+
+
+    <nav class="main-nav">
+        <a href="#">JO Parigi 2024</a>
+        <a href="#">Politica</a>
+        <a href="#">Internazionale</a>
+        <a href="#">Società</a>
+        <a href="#">Voce</a>
+        <a href="#">Economia</a>
+        <a href="#">Sport</a>
+        <a href="#">Cultura</a>
+        <a href="#">Viaggi</a>
+        <a href="#">Stile</a>
+        <a href="#">Vino</a>
+    </nav>
+    <div class="login-box">
+        <p><span class="icona-login">&#x1F464;</span> Login </p>
+    </div>
+</header>
+
+
+
+
+<div class="navbar">
+    <div class="miniatura-giornale">
+        <img src="https://placehold.co/85x65/dddddd/163860?text=Miniatura\nGiornale" class="copertina-giornale" alt="Copertina del giornale Le Figaro" title="Leggi il PDF online"
+             data-bs-delay='{"show": 500}"' >
+        <span class="testo-miniatura-giornale">Leggi il giornale</span>
+    </div>
+
+    <div class="menu-box">
+        <p class="menu-label">Menu</p>
+        <div class="menu-icon" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+
+    <div class="logo">
+        <img src="https://placehold.co/675x100/dddddd/163860?text=Nome+Giornale&font=montserrat" class="logo" alt="logo" border="0" title="Accedi a Le Figaro" data-bs-delay='{"show": 500}'></a>
+        <span class="testo-piccolo-logo"> << Senza la libertà di incolpare, non c'è elogio che sia lusinghiero. >> Beaumarchais </span>
+    </div>
+
+
+    <span class="navbar-spacer"></span>
+    <div>
+        <button class="pulsante-abbonamento">
+            Abbonati
+            <span class="testo-piccolo-pulsante-abbonamento">0,99&euro; i primi mesi</span>
+        </button>
+    </div>
+</div>
+
+<div id="overlay"></div>
+
+<header class="header2">
+    <div class="menu-icon2" id="menuIcon">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+    <div class="logo2">
+        <img src="https://placehold.co/175x30/dddddd/163860?text=Nome+Giornale&font=montserrat" alt="Logo">
+    </div>
+    <div class="login-icon2">
+        <span class="icona-login">&#x1F464;</span>
+    </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+    <button class="pulsante-abbonamento2">
+        Abbonati
+        <span class="testo-piccolo-pulsante-abbonamento2">0,99&euro; i primi mesi</span>
+    </button>
+    <button class="pulsante-ricerca">
+        &#128269; Ricerca
+    </button>
+    <p class="titolo-barra-menu">Rubriche e servizi</p>
+    <ul>
+        <li><a href="#">JO Parigi 2024</a></li>
+        <li><a href="#">Politica</a></li>
+        <li><a href="#">Internazionale</a></li>
+        <li><a href="#">Società</a></li>
+        <li><a href="#">Voce</a></li>
+        <li><a href="#">Economia</a></li>
+        <li><a href="#">Sport</a></li>
+        <li><a href="#">Cultura</a></li>
+        <li><a href="#">Viaggi</a></li>
+        <li><a href="#">Stile</a></li>
+        <li><a href="#">Vino</a></li>
+    </ul>
+</nav>
+
+
+<nav class="fh-rubriche">
+        <nav class="fh-oggetto-rubrica">
+            <div class="dropdown">
+                <a href="#" class="lh-rubrica-link dropdown-toggle">Edizioni Locali </a>
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <li>
+                        <a href="#">Bordeaux</a>
+                        <a href="#">Lyon</a>
+                        <a href="#">Marseille</a>
+                        <a href="#">Nantes</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="lh-rubrica-link">Radio & Podcasts </a>
+            <a href="#" class="lh-rubrica-link">TV & Video </a>
+            <a href="#" class="lh-rubrica-link">Newsletters</a>
+        </nav>
+</nav>
+
+
+
+<div class="news-grid">
+    <div class="news-column news-column-left">
+
+        <img class="radio-button-2" src="https://placehold.co/200x100/dddddd/163860?text=Radio" alt="radio-button-2">
+
+        <div>
+            <p class="titolo-countdown">Paris 2024</p>
+        </div>
+
+
+
+        <div class="countdown-container">
+            <div class="countdown-item">
+                <div class="countdown-box">
+                    <p id="days"></p>
+                    <span>Giorni</span>
+                </div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-box">
+                    <p id="hours"></p>
+                    <span>Ore</span>
+                </div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-box">
+                    <p id="minutes"></p>
+                    <span>Minuti</span>
+                </div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-box">
+                    <p id="seconds"></p>
+                    <span>Secondi</span>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <p class="titolo-reportage">REPORTAGE 1</p>
+            <img class="foto-reportage" src="https://placehold.co/200x450" alt="foto-reportage">
+        </div>
+
+        <div>
+            <p class="titolo-reportage">REPORTAGE 2</p>
+            <img class="foto-reportage" src="https://placehold.co/200x300" alt="foto-reportage">
+        </div>
+
+    </div>
+    <div class="news-column news-column-center">
+        <div class="article">
+            <h2 class="article-title">Titolo dell'articolo 1</h2>
+            <img src="https://placehold.co/600x300/dddddd/163860?text=foto+1" alt="Articolo 1" class="article-image">
+            <p class="caption"><strong>Didascalia dell'immagine</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="data-articolo">Pubblicato 2 ore fa</p>
+        </div>
+        <div class="article">
+            <h2 class="article-title">Titolo dell'articolo 2</h2>
+            <img src="https://placehold.co/600x300/dddddd/163860?text=foto+2" alt="Articolo 2" class="article-image">
+            <p class="caption"><strong>Didascalia dell'immagine</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="data-articolo">Pubblicato 7 ore fa</p>
+        </div>
+        <div class="article">
+            <h2 class="article-title">Titolo dell'articolo 3</h2>
+            <img src="https://placehold.co/600x300/dddddd/163860?text=foto+3" alt="Articolo 3" class="article-image">
+            <p class="caption"><strong>Didascalia dell'immagine</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="data-articolo">Pubblicato 18 ore fa</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="news-column news-column-right">
+
+        <div class="flash-news">
+            <div class="flash-news-header">
+                <h2 class="flash-news-title">Notizie Flash</h2>
+                <div class="category-selector">
+                    <select name="category" id="category">
+                        <option value="attualita">Attualità</option>
+                        <option value="economia">Economia</option>
+                        <option value="sport">Sport</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flash-news-list">
+                <div class="flash-news-item">
+                    <div class="flash-news-time">23:00</div>
+                    <div class="flash-news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="flash-news-item">
+                    <div class="flash-news-time">22:30</div>
+                    <div class="flash-news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="flash-news-item">
+                    <div class="flash-news-time">20:45</div>
+                    <div class="flash-news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="flash-news-item">
+                    <div class="flash-news-time">18:20</div>
+                    <div class="flash-news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="flash-news-item">
+                    <div class="flash-news-time">15:55</div>
+                    <div class="flash-news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="flash-news-item">
+                    <div class="flash-news-time">12:10</div>
+                    <div class="flash-news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="flash-news-item">
+                    <div class="flash-news-time">11:30</div>
+                    <div class="flash-news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer per la versione mobile -->
+<div class="mobileFooter">
+    <div class="footerButton">
+        <img style="width: 20px" href="#" src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/saved-icon.png" alt="la-selezione">
+        <span>La selezione</span>
+    </div>
+    <div class="footerButton">
+        <img style="width: 20px" href="#" src="https://i.ibb.co/tHK3PNy/home-icon.png" alt="home-icon" ></a>
+        <span>Home</span>
+    </div>
+    <div class="footerButton">
+        <img style="width: 20px" href="#" src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/history-icon.png" alt="Flash">
+        <span>Flash</span>
+    </div>
+</div>
+
+<!-- Footer per la versione desktop -->
+<footer class="footer">
+    <div class="footer-column first-column">
+        <h3 class="tit-link-utili">I nostri link utili</h3>
+        <div class="useful-links">
+            <ul>
+                <li><a href="#">Le nostre applicazioni mobili</a></li>
+                <li><a href="#">Segui Nome Giornale su Google attualità</a></li>
+                <li><a href="#">Nome Giornale Bordeaux</a></li>
+                <li><a href="#">Nome Giornale Lione</a></li>
+                <li><a href="#">Nome Giornale Marsiglia</a></li>
+                <li><a href="#">Nome Giornale Nantes</a></li>
+                <li><a href="#">Nome Giornale Nizza</a></li>
+                <li><a href="#">I video di Nome Giornale Live</a></li>
+                <li><a href="#">I podcast del Nome Giornale</a></li>
+                <li><a href="#">I programmi TV</a></li>
+                <li><a href="#">I risultati sportivi</a></li>
+                <li><a href="#">Carnet del giorno</a></li>
+                <li><a href="#">Nome Giornale Store</a></li>
+                <li><a href="#">Giochi</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-column">
+        <div class="footer-column-center">
+            <div class="image-text-container">
+                <img src="https://placehold.co/125x185/dddddd/163860?text=Miniatura\nGiornale" alt="miniatura-giornale">
+                <div class="text-content">
+                    <h3 class="title">Il Chiosco</h3>
+                    <p class="caption">Le figaro</p>
+                    <button class="footer-button">LEGGI QUESTO NUMERO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-column">
+        <h3 style="font-size: 16px; margin: 0;">Abbonamento</h3>
+        <ul class="lista-abbonamento">
+            <li><span style="color: orange; font-size: 14px">&#8594;</span> Lorem ipsum dolor sit amet</li>
+        </ul>
+        <p class="caption-abbonamento">Leggi articoli illimitati a partire da 0,99&euro;</p>
+        <ul class="lista-abbonamento">
+            <li><span style="color: orange; font-size: 14px">&#8594;</span> Lorem ipsum dolor sit amet</li>
+            <li><span style="color: orange; font-size: 14px">&#8594;</span> Lorem ipsum dolor sit amet</li>
+            <li><span style="color: orange; font-size: 14px">&#8594;</span> Lorem ipsum dolor sit amet</li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3 class="footer-title">Applicazioni mobili</h3>
+        <div class="footer-links">
+            <p><a href="#">Nome Giornale: iPhone | Android</a></p>
+            <p><a href="#">Nome Giornale Giochi: iPhone | Android</a></p>
+            <p><a href="#">Il Chiosco Nome Giornale: iPhone | Android</a></p>
+            <p><a href="#">Nome Giornale Cucina: iPhone | Android</a></p>
+        </div>
+
+        <h3 class="footer-title">Le nostra newsletter</h3>
+        <p><a href="#">Iscriviti alla newsletter</a></p>
+        <h3 class="footer-title">Seguici su:</h3>
+        <div class="footer-social-icons">
+            <img src="https://placehold.co/24x24/dddddd/163860?text=F" alt="Facebook">
+            <img src="https://placehold.co/24x24/dddddd/163860?text=in" alt="LinkedIn">
+            <img src="https://placehold.co/24x24/dddddd/163860?text=Tw" alt="Twitter">
+            <img src="https://placehold.co/24x24/dddddd/163860?text=IN" alt="Instagram">
+            <img src="https://placehold.co/24x24/dddddd/163860?text=TT" alt="TikTok">
+        </div>
+    </div>
+    <div class="footer-row">
+        <ul>
+            <li><a href="#">Impostazioni dei cookie</a></li>
+            <li><a href="#">Mappa del sito</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">CGU</a></li>
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">Informazioni sui cookie</a></li>
+            <li><a href="#">Normativa</a></li>
+            <li><a href="#">Abbonamenti</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Pubblicità</a></li>
+            <li><a href="#">Mappa del sito</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+
+
+
+</html>
