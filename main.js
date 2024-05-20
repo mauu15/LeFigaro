@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   function toggleMenu() {
-    if (window.innerWidth > 1024) {
+    if (window.innerWidth > 0) {
       if (isMenuOpen) {
         dropdownMenu.style.display = 'block';
         overlay.style.display = 'block';
@@ -52,10 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dropdownMenu.style.display = 'none';
         overlay.style.display = 'none';
       }
-    } else {
-      dropdownMenu.style.display = 'none';
-      overlay.style.display = 'none';
-    }
+    } 
   }
 
   // Aggiungi un listener per l'evento scroll
